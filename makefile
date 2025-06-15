@@ -10,7 +10,7 @@ recognize-os:
 
 .PHONY: python-venv-linux
 python-venv-linux:
-	@python -m venv testvenv \
+	@python3 -m venv testvenv \
 
 	@source testvenv/bin/activate \
 
