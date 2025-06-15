@@ -7,13 +7,3 @@ endif
 .PHONY: recognize-os
 recognize-os:
 	@echo $(detected_OS)
-
-.PHONY: python-venv-linux
-python-venv-linux:
-	@python3 -m venv testvenv \
-
-	@source testvenv/bin/activate \
-
-	@pip install numpy \
-
-	@deactivate \
