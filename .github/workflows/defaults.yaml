@@ -1,18 +1,19 @@
-   name: python-app
+name: Python Workflow
 
-   on:
-     push:
-       branches: [ main ]
-     pull_request:
-       branches: [ main ]
+on:
+  push:
+    branches: [ main ]
 
-   jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-      - name: checkout repo
-        uses: actions/checkout@main
-      - name: build application
-        run: make recognize-os
-      - name: Python venv
-        run: make python-venv-linux
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.x
+    - name: Install dependencies
+      run: make recognize-os
+    - name: Run Python script
+      run: make python-venv-linux

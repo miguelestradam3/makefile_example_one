@@ -14,7 +14,3 @@ python-venv-linux:
 	@source testvenv/bin/activate
 	@pip install numpy
 	@deactivate
-
-.PHONY: python-venv-windows
-python-venv-windows:
-	@echo "none"
