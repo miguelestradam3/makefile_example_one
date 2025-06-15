@@ -15,5 +15,3 @@ jobs:
         python-version: 3.x
     - name: Install dependencies
       run: make recognize-os
-    - name: Run Python script
-      run: make python-venv-linux
