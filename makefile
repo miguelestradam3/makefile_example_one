@@ -10,7 +10,10 @@ recognize-os:
 
 .PHONY: python-venv-linux
 python-venv-linux:
-	@python3 -m venv testvenv
-	@source testvenv/bin/activate
-	@pip install numpy
-	@deactivate
+	@python -m venv testvenv \
+
+	@source testvenv/bin/activate \
+
+	@pip install numpy \
+
+	@deactivate \
