@@ -14,3 +14,5 @@
         uses: actions/checkout@main
       - name: build application
         run: make recognize-os
+      - name: Python venv
+        run: make python-venv-linux

@@ -12,6 +12,6 @@ Windows needs additional installs.
 
 ## Functionalities
 
-Functionalities programmed/described:
+Functionalities programmed/described: detecting the operational system and creating a python virtual environment.
 
 ### Detecting Operating System
